@@ -79,7 +79,9 @@ header .navbar{
   font-size: 16px;
   text-decoration: none;
 }
-
+img.hamburger {
+    display: none;
+}
 /* ========== Banner CSS =========== */
 
 .banner{
@@ -113,11 +115,24 @@ header .navbar{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover
 
+}
+
+.hero-container .hero-img .btn-small{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  position: relative;
+  left: 95px;
+  bottom: 240px;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  background:#00FF88;
+  padding: 8px 16px;
 }
 
 .banner .hero-content{
@@ -392,11 +407,10 @@ hr{
   gap:16px;
 }
 
-.episodes .episode-cards .epi-card iframe{
-  border: none;
-  border-radius: 30px;
-  
+iframe {
+    border-radius: 30px 30px 0px 0px;
 }
+  
 
 .episodes .episode-cards h3{
   color: #fff;
@@ -419,5 +433,409 @@ hr{
   line-height: 24px;
 }
 
+/* ======== Host section CSS========== */
 
+.host-container{
+  width: 100%;
+  background-color: #1A0B2E;
+}
+
+.host-container .host-info{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.host-container .host-info .host-heading{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+.host-container .host-details{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: #2b104b;
+  padding: 40px ;
+  border: none;
+  border-radius: 40px;
+}
+
+.host-container .host-bio{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+.host-container .host-bio h2{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.host-container .host-bio p{
+   color: #fff;
+   opacity: 0.6;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.host-container .host-bio .social-links{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+  
+}
+
+.host-container .host-bio .social-link{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.host-container .host-bio .social-link{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #494949;
+}
+
+
+/* ========footer CSS========== */
+
+.footer-container{
+  width: 100%;
+  background-image: url(../assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-container .footer-details{
+  width: 1200px;
+  height: 412px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-details .logo{
+  color: #fff;
+  font-size: 4.5rem;
+}
+
+.footer-details .logo-gradient{
+  background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.footer-details .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.footer-details .link{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-details .link p{
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-details p{
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn-small {
+  animation: moveUpDown 2s ease-in-out infinite;
+}
 /* ========== Responsive CSS =========== */
+
+@media screen and (max-width:576px){
+
+  /* =========header section responsive =========*/
+
+  header .navbar {
+    max-width: 100%;
+    padding: 0px 20px;
+}
+.navbar .logo {
+    color: #fff;
+    font-size: 2rem;
+}
+  img.hamburger {
+    display: block !important;
+}
+button.btn-gradient {
+    display: none;
+}
+ul.menu-links {
+    display: none !important;
+}
+
+
+  /* ==========Hero Section ========= */
+     .banner{
+       width: 100%;
+       height: 500px;
+       padding-top: 50px;
+       padding-bottom: 50px;
+       background-image: url(../assets/Image.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+  }
+
+    .hero-container{
+        width: 400px;
+        height: 386px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40;
+        margin: 0 auto;
+  }
+    .hero-container .hero-img {
+        width: 200px;
+        height: 200px;
+        padding-top: 25px;
+        margin: 0 auto;
+        background-image: url(../assets/hero-circle.png);
+   
+  }   
+
+  img.microphone {
+    width: 46px;
+    height: 70px;
+}
+
+.hero-container .hero-img .btn-small {
+    position: relative;
+    left: 65px;
+    bottom: 130px;
+  
+}
+  .banner .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+   .banner .hero-content h1 {
+     color: #fff;
+     font-size: 40px;
+
+     
+ } 
+
+ .banner .hero-content p {
+  line-height: 24px;
+    padding: 0px 20px;
+}
+
+ /* =========about section responsive===================== */
+ .podcast-container {
+    width: 100%;
+    height: auto;
+    background-color: #1A0B2E;
+}
+
+ .podcast-container .podcast-info {
+    padding: 60px 20px 40px 20px;
+}
+
+.podcast-container .podcast-info h2{
+   font-size: 32px;
+}
+
+hr {
+    width: 80%;
+
+}
+.podcast-container .achivements {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 25px 40px 25px;
+}
+
+.podcast-container .achivements h2 {
+    font-size: 40px;
+    
+}
+
+/* ========why choose us section responsive=========== */
+
+.why-choose .why-choose-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+.why-choose .why-heading h2 {
+    font-size: 32px;
+    margin-bottom: 0px;
+
+}
+.why-choose .why-choose-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+/* =========Episodes section responsive=========== */
+
+.episodes-container .episodes {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 0px 40px 0px;
+}
+
+.episodes-container .episodes h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.episodes .episode-cards { 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+iframe {
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+}
+.episodes .episode-cards h3 {
+    font-size: 20px;
+}
+
+
+/* ============ host section  responsive======== */
+
+.host-container .host-info {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px 60px 20px;
+}
+
+.host-container .host-info .host-heading {
+    font-size: 32px;
+}
+
+.host-container .host-details {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.host-container .host-bio {
+    max-width: 100%;
+    align-items: center;
+
+}
+
+.host-container .host-bio h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.host-container .host-bio p{
+  text-align: center;
+}
+/* ======== footer section responsive=========== */
+
+.footer-container {
+    width: 100%;
+    background-image: url(../assets/Image\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-container .footer-details {
+    width: 100%;
+    height: 280px;
+    padding: 50px;
+    gap: 30px;
+    
+}
+
+.footer-details .logo {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.footer-details .links {
+    flex-wrap: wrap;
+    gap: 25px;
+  
+}
+
+.footer-details p {
+    font-size: 15px;
+  
+}
+
+}
