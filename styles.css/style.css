@@ -205,7 +205,7 @@ header .navbar{
 
 .podcast-container .podcast-info p{
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.6;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -242,7 +242,7 @@ hr{
 
 .podcast-container .achivements p{
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.6;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
@@ -250,4 +250,174 @@ hr{
   text-align: center;
   margin-bottom: 20px;
 }
+
+
+/* ======= Why choose CSS ========= */
+
+.why-choose{
+  width: 100%;
+  background: rgba(35, 14, 61, 1);
+}
+
+
+.why-choose .why-choose-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0px;
+}
+
+.why-choose .why-heading h2{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.why-choose .why-choose-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.why-choose .why-choose-card #box-1{
+  grid-column: span 1;
+  grid-row: span 2;
+
+}
+
+.why-choose .why-choose-card #box-2{
+  grid-column: span 2;
+  grid-row: span 1;
+ 
+}
+
+.why-choose .why-choose-card #box-3{
+  grid-column: span 2;
+  grid-row: span 1;
+  
+
+}
+
+.why-choose .why-choose-card #box-4{
+  grid-column: span 2;
+  
+
+}
+
+.why-choose .why-choose-card #box-5{
+  background-color: #2b104b;
+
+}
+
+.why-choose .why-choose-card .box{
+  background-color: #2b104b;
+  padding: 40px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.why-choose .why-choose-card .box h3{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.why-choose .why-choose-card .box p{
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* ========== Episodes CSS =========== */
+
+.episodes-container{
+  width: 100%;
+  background-color: #1A0B2E;
+}
+
+.episodes-container .episodes{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0px;
+}
+
+.episodes-container .episodes h2{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.episodes .episode-cards{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.episodes .episode-cards .epi-cards{
+  background-color: #2b104b;
+  padding: 0px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.episodes .episode-cards .epi-card{
+  background-color: #2b104b;
+  padding: 30px 20px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap:16px;
+}
+
+.episodes .episode-cards .epi-card iframe{
+  border: none;
+  border-radius: 30px;
+  
+}
+
+.episodes .episode-cards h3{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.episodes .episode-cards p{
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.episodes .episode-cards .hr{
+  color: #15ff92;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
 /* ========== Responsive CSS =========== */
